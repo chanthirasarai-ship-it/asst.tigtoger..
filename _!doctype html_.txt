@@ -1,0 +1,672 @@
+<!doctype html>
+<html lang="th"><head><script>window["__codeletBootstrap__"]=JSON.parse('{"A":"A","B":"20260916-23-2f47194","C":{"Abril Fatface":"YACgEZbkUVE,0","Alfa Slab One":"YACgEYS9sJU,0","Anton":"YACgEcYqQ-A,0","Archivo":"YACgEZulLoA,0","Arial Narrow":"YAGyDvJ_4Ts,0","Arial Rounded MT Bold":"YAFcfoaHu-s,0","Arial":"YAGyDvJ_4Ts,0","Avenir Next":"YAFcfmNq6UY,0","Baloo 2":"YADK30bC6HQ,0","Bebas Neue":"YACgESME5ew,0","Bricolage Grotesque":"YAFyMcdwzpc,0","Broken Glyph":"YADZ-exUkv0,0","Canva Sans":"YAFdJjTk5UU,1","Caveat":"YALBs2ploWQ,0","Comic Sans MS":"YAFcfvtOAUY,1","Cormorant Garamond":"YAFdJhX-538,0","Courier New":"YAGzXiGs0_8,0","Courier Prime":"YAD1aFjegN8,0","DM Sans":"YAD1aU3sLnI,0","DM Serif Display":"YAD1aYG82rc,0","Forum":"YACgEcnnqB4,0","Fraunces":"YAFdJpU7Kkk,0","Georgia":"YAGzXkO0pEM,0","Ghost Mono":"YAHQutsX00Q,0","Hanken Grotesk":"YAFcfhwp99E,0","Helvetica Neue":"YAFcf6CtJfI,0","Helvetica":"YAFcf6CtJfI,0","IBM Plex Mono":"YAFdJkmvhGI,0","Impact":"YAFcfnjI7Vk,0","Instrument Serif":"YAHFeOnZNEk,0","Inter":"YAFdJvSyp_k,3","Iowan Old Style":"YAGNIFa8j9o,0","Jacques Francois":"YADK3zbC6RM,0","JetBrains Mono":"YAFdJksXcAk,0","Josefin Sans":"YAFdJjvw9Ps,0","Lato":"YAFdJuFCnaw,0","Libre Baskerville":"YACgEUFdPdA,0","Lobster":"YAD8SnSjSFI,0","Lora":"YACgEXvxf8Q,0","Merriweather":"YACgEXvHxxs,0","Montserrat":"YAFdtQi73Xs,0","Nunito":"YAFdJoNRMmU,1","Oleo Script":"YACgEQQ14jI,0","Oswald":"YACgEQY10lw,0","Pacifico":"YADLjORQ1u4,0","Phantom Sans":"YAFdJvgJ5TU,0","Playfair Display":"YAFdJhem5V8,1","Plus Jakarta Sans":"YAGvf3_u0_Q,0","Poppins":"YAFdJjbTu24,1","Press Start 2P":"YAFyGr-8pmQ,0","Quicksand":"YAFdJpYtCxE,1","Raleway":"YAFdJhmxbVQ,1","Roboto Slab":"YAFdJswIKAg,0","Rockwell":"YAFcfyVZnN0,0","Rye":"YACgEdQP21k,0","Segoe UI":"YAHNdRD1Klw,0","Source Sans 3":"YAG4lO1Mj10,0","Source Serif 4":"YACgEfdj394,0","Space Grotesk":"YADZ-dYEmhg,0","Space Mono":"YADW1-vpsoc,0","Times New Roman":"YAGzXW3gftg,0","Times":"YAGzXW3gftg,0","Trebuchet MS":"YAFcfrglpVA,0","UV Display":"YAEdVfSSpYo,0","UV Sans":"YAFdJvgJ5TU,0","Ubuntu":"YACgERDU--Q,0","Verdana":"YAGzXTctYtQ,0","Work Sans":"YAGXhLOKv44,0","Yellowtail":"YACgEYG4kG4,0","ui-monospace":"YAD1aFjegN8,0","ui-sans-serif":"YACkoD1yZN0,0"}}');</script><script src="/_sdk/83d6dfdadcd4750a.telemetry_sdk.js" integrity="sha512-XS4Dvzp6vbagZS9vFErihvr8aO3S0tH78KWUefn06fmL4WYqryBtZj/IOLITYj7dFA4gPVvPg1W/JB1DK3uLNQ=="></script>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Asst.tigtoger</title>
+  <script src="https://cdn.tailwindcss.com/3.4.17"></script>
+  <link href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;600;700&amp;family=Noto+Sans+Thai:wght@300;400;500;600;700&amp;display=swap" rel="stylesheet">
+  <script src="https://cdn.jsdelivr.net/npm/lucide@0.577.0/dist/umd/lucide.min.js"></script>
+  <script>
+tailwind.config={darkMode:'class',theme:{extend:{colors:{navy:'#1e2a4a',indigo:'#3b4d8a',mint:'#2dd4aa',teal:'#14b8a6','bg-light':'#f0f4f8','bg-dark':'#0f172a'}}}}
+</script>
+  <style>
+body{font-family:'Noto Sans Thai','DM Sans',sans-serif;-webkit-tap-highlight-color:transparent}
+.page{display:none}.page.active{display:block}
+.bottom-nav-btn.active{color:#2dd4aa}
+.dark .bottom-nav-btn.active{color:#2dd4aa}
+.toast{animation:slideUp .3s ease,fadeOut .3s ease 2.7s}
+@keyframes slideUp{from{transform:translateY(100%);opacity:0}to{transform:translateY(0);opacity:1}}
+@keyframes fadeOut{to{opacity:0}}
+.modal-overlay{animation:fadeIn .2s ease}
+@keyframes fadeIn{from{opacity:0}to{opacity:1}}
+.card-hover{transition:transform .15s ease,box-shadow .15s ease}
+.card-hover:active{transform:scale(.97)}
+.risk-low{border-left:4px solid #22c55e}.risk-mid{border-left:4px solid #f59e0b}.risk-high{border-left:4px solid #ef4444}
+.switch{position:relative;width:44px;height:24px;background:#cbd5e1;border-radius:12px;cursor:pointer;transition:background .2s}
+.switch.on{background:#2dd4aa}
+.switch::after{content:'';position:absolute;top:2px;left:2px;width:20px;height:20px;background:#fff;border-radius:50%;transition:transform .2s}
+.switch.on::after{transform:translateX(20px)}
+.pkg-card{transition:all .2s}.pkg-card:hover{box-shadow:0 4px 20px rgba(0,0,0,.12)}
+.demo-badge{font-size:10px;background:#f59e0b;color:#fff;padding:1px 6px;border-radius:8px;font-weight:600}
+</style>
+  <script src="/_sdk/8de366929c5f3b48.data_sdk.js" type="text/javascript" integrity="sha512-TyQ8k8cZj66xe/aENmn6RyZpdOFZXbAo5+KBG3PeFM+Q4qMTHU8xAqmq4ADClNfPrstgQYV6OzZHwLTnElzB2g=="></script>
+  <script src="/_sdk/a558f474cd01d324.resizing_sdk.js" type="text/javascript" integrity="sha512-evIEjzvRDdaV6tHT4THeYa18+ppfgUj4Zpx5W8R1gaF2VKcOba7TPP4x2YYqsfThPwuC5NaBFyUH6V81c3i8kA=="></script>
+ </head>
+ <body data-template-id="__page-root" class="w-full min-h-screen bg-bg-light text-gray-800 dark:bg-bg-dark dark:text-gray-100 transition-colors" style="background: rgb(240, 244, 248);">
+  <!-- Toast Container -->
+  <div id="toast-container" class="fixed bottom-20 left-1/2 -translate-x-1/2 z-[100] flex flex-col gap-2 items-center pointer-events-none"></div><!-- Modal Overlay -->
+  <div id="modal-overlay" class="fixed inset-0 bg-black/50 z-50 hidden modal-overlay flex items-center justify-center p-4">
+   <div id="modal-content" class="bg-white dark:bg-slate-800 rounded-2xl p-6 max-w-sm w-full max-h-[80vh] overflow-y-auto shadow-2xl"></div>
+  </div><!-- ===== ONBOARDING ===== -->
+  <div id="pg-onboarding" class="page active">
+   <div class="flex flex-col items-center justify-center px-6 text-center" style="min-height:calc(100 * min(var(--vh,1vh),1vh))">
+    <div class="mb-8">
+     <div class="w-20 h-20 rounded-2xl bg-gradient-to-br from-navy to-indigo flex items-center justify-center mx-auto mb-4 shadow-lg"><span class="text-white text-2xl font-bold">A.t</span>
+     </div>
+     <h1 data-template-id="onboard-title" class="canva-text text-3xl font-bold bg-gradient-to-r from-navy to-teal bg-clip-text text-transparent" style="color: rgb(30, 42, 74); font-weight: 700; font-style: normal; font-size: 32px;">Asst.tigtoger</h1>
+     <p data-template-id="onboard-sub" class="canva-text mt-2 text-sm text-gray-500 dark:text-gray-400" style="color: rgb(107, 114, 128); font-weight: 400; font-style: normal; font-size: 16px;">by UBSMKT.</p>
+    </div>
+    <p data-template-id="onboard-tagline" class="canva-text text-base text-gray-600 dark:text-gray-300 mb-8 max-w-xs" style="color: rgb(55, 65, 81); font-weight: 400; font-style: normal; font-size: 16px;">คิดคอนเทนต์ ตรวจความเสี่ยง และเติบโตอย่างรับผิดชอบ</p><button onclick="showPage('pg-terms')" data-template-id="onboard-cta" class="canva-button w-full max-w-xs py-3.5 rounded-xl font-semibold text-lg shadow-lg active:scale-95 transition-transform" style="background: linear-gradient(135deg, rgb(59, 77, 138), rgb(20, 184, 166)); color: rgb(255, 255, 255); font-weight: 600; font-style: normal; font-size: 16px;">เริ่มใช้งาน</button> <button onclick="showPage('pg-terms')" data-template-id="onboard-terms-link" class="canva-text mt-4 text-sm underline" style="color: rgb(107, 114, 128); font-weight: 400; font-style: normal; font-size: 16px;">อ่านข้อตกลงและเงื่อนไข</button>
+   </div>
+  </div><!-- ===== TERMS ===== -->
+  <div id="pg-terms" class="page">
+   <div class="flex flex-col" style="min-height:calc(100 * min(var(--vh,1vh),1vh))">
+    <header class="sticky top-0 bg-white/90 dark:bg-slate-900/90 backdrop-blur-md border-b border-gray-200 dark:border-slate-700 px-4 py-3 flex items-center gap-3 z-20">
+     <button onclick="showPage('pg-onboarding')" aria-label="กลับ" class="p-1"><i data-lucide="arrow-left" class="w-5 h-5"></i></button>
+     <h2 data-template-id="terms-heading" class="canva-text font-semibold text-lg" style="color: rgb(17, 24, 39); font-weight: 600; font-style: normal; font-size: 24px;">ข้อตกลงและเงื่อนไข</h2>
+    </header>
+    <div class="flex-1 overflow-y-auto px-4 py-4 text-sm leading-relaxed text-gray-700 dark:text-gray-300 space-y-4" id="terms-body">
+     <p class="font-bold text-base text-gray-900 dark:text-gray-100">ข้อตกลงและเงื่อนไขการใช้บริการแอปพลิเคชัน Asst.tigtoger</p>
+     <p>ยินดีต้อนรับสู่ Asst.tigtoger ซึ่งให้บริการโดย UBSMKT. กรุณาอ่านข้อตกลงและเงื่อนไขการใช้บริการนี้อย่างละเอียดก่อนเริ่มต้นใช้งาน การลงทะเบียน เข้าถึง หรือใช้งานแอปพลิเคชันจะถือว่าท่านได้อ่าน เข้าใจ และยอมรับที่จะผูกพันตามข้อตกลงนี้ทุกประการ</p>
+     <p class="font-semibold text-gray-900 dark:text-gray-100">1. การสร้างบัญชีและการรักษาความปลอดภัย</p>
+     <p>1.1 ผู้ใช้บริการต้องให้ข้อมูลที่เป็นจริง ถูกต้อง และเป็นปัจจุบันในการลงทะเบียนเข้าใช้งาน</p>
+     <p>1.2 ผู้ใช้บริการมีหน้าที่รับผิดชอบในการเก็บรักษาชื่อผู้ใช้ (Username) และรหัสผ่าน (Password) เป็นความลับ</p>
+     <p>1.3 ผู้ใช้บริการต้องรับผิดชอบต่อกิจกรรมทั้งหมดที่เกิดขึ้นภายใต้บัญชีของตนเอง หากพบการเข้าถึงโดยไม่ได้รับอนุญาต ต้องแจ้งผู้ให้บริการทันที</p>
+     <p class="font-semibold text-gray-900 dark:text-gray-100">2. ขอบเขตการให้บริการและการใช้งานที่เหมาะสม</p>
+     <p>2.1 แอปพลิเคชันนี้ให้บริการเพื่อช่วยวางแผน สร้าง และตรวจสอบคอนเทนต์สำหรับผู้สร้างคอนเทนต์ โดยผู้ใช้ต้องตรวจสอบเนื้อหาและปฏิบัติตามกฎหมายและนโยบายของแพลตฟอร์มที่เกี่ยวข้อง</p>
+     <p>2.2 ผู้ใช้บริการตกลงว่าจะไม่ใช้แอปพลิเคชันเพื่อวัตถุประสงค์ที่ผิดกฎหมาย ละเมิดสิทธิผู้อื่น หรือละเมิดศีลธรรมอันดี; ไม่พยายามดัดแปลง ย้อนกระบวนการสร้าง (Reverse Engineer) หรือส่งไวรัส/รหัสที่เป็นอันตรายเข้ามาในระบบ; และไม่คัดลอก ดัดแปลง หรือนำส่วนหนึ่งส่วนใดของแอปพลิเคชันไปใช้ในเชิงพาณิชย์โดยไม่ได้รับอนุญาต</p>
+     <p class="font-semibold text-gray-900 dark:text-gray-100">3. ทรัพย์สินทางปัญญา</p>
+     <p>โลโก้ เครื่องหมายการค้า ข้อความ รูปภาพ ซอฟต์แวร์ และเนื้อหาทั้งหมดภายในแอปพลิเคชัน ถือเป็นทรัพย์สินทางปัญญาของผู้ให้บริการ หรือผู้ให้อนุญาตแก่ผู้ให้บริการ ห้ามมิให้ผู้ใดคัดลอก ทำซ้ำ หรือนำไปเผยแพร่โดยไม่ได้รับยินยอมเป็นลายลักษณ์อักษร</p>
+     <p class="font-semibold text-gray-900 dark:text-gray-100">4. รูปแบบสมาชิก การชำระเงิน และการต่ออายุ</p>
+     <p>มีสมาชิกรายวัน 24 ชั่วโมง, รายสัปดาห์ 7 วัน, รายเดือน 30 วัน, รายปี 365 วัน และสมาชิกแบบถาวร/ซื้อขาด โดยการซื้อขาดชำระเงินครั้งเดียวเพื่อเข้าถึงบริการตลอดระยะเวลาที่แอปพลิเคชันยังคงเปิดให้บริการตามวงจรชีวิตของผลิตภัณฑ์</p>
+     <p>ผู้ให้บริการจะแสดงรายละเอียดราคา รอบบิล และเงื่อนไขการต่ออายุอย่างชัดเจนก่อนสั่งซื้อ สำหรับแพ็กเกจรายวัน รายสัปดาห์ รายเดือน และรายปี ระบบอาจต่ออายุและตัดเงินอัตโนมัติเมื่อครบกำหนด เว้นแต่ผู้ใช้ยกเลิกก่อนรอบถัดไป ช่องทางชำระเงินอาจรวมถึง Apple App Store, Google Play Store หรือระบบชำระเงินภายนอกที่ได้รับอนุญาต</p>
+     <p>ผู้ใช้ยกเลิกการต่ออายุอัตโนมัติได้ผ่านเมนูตั้งค่าในแอปหรือผ่านสโตร์ที่สมัคร อย่างน้อย 24 ชั่วโมงก่อนสิ้นสุดระยะเวลาปัจจุบัน เมื่อยกเลิกแล้วใช้สิทธิ์ได้จนหมดรอบและจะไม่ถูกเรียกเก็บในรอบถัดไป</p>
+     <p>ค่าบริการที่ชำระแล้ว รวมถึงแพ็กเกจถาวร ไม่สามารถขอคืนเงิน แลกเปลี่ยน หรือเปลี่ยนเป็นเงินสดได้ เว้นแต่เป็นไปตามกฎหมายหรือนโยบายของสโตร์ที่เกี่ยวข้อง กรณีสมัครผ่าน App Store หรือ Google Play Store ให้ขอคืนเงินตามเงื่อนไขของ Apple หรือ Google โดยตรง</p>
+     <p>ผู้ให้บริการอาจปรับเปลี่ยนราคา โดยจะแจ้งล่วงหน้าอย่างน้อย 30 วันผ่านแอปหรืออีเมลที่ลงทะเบียน หากไม่ยอมรับราคาใหม่ ผู้ใช้ยกเลิกก่อนวันที่มีผลได้</p>
+     <p class="font-semibold text-gray-900 dark:text-gray-100">5. ข้อจำกัดความรับผิดชอบ</p>
+     <p>ผู้ให้บริการมุ่งมั่นพัฒนาระบบให้มีประสิทธิภาพ แต่ไม่รับประกันว่าการทำงานจะไม่มีข้อผิดพลาดหรือหยุดชะงัก และไม่รับผิดชอบต่อความเสียหายทางตรง ทางอ้อม หรือผลพวงที่เกิดจากการใช้งานหรือไม่สามารถใช้งานแอปพลิเคชันได้ ทั้งนี้ต้องอยู่ภายใต้ขอบเขตที่กฎหมายอนุญาต</p>
+     <p class="font-semibold text-gray-900 dark:text-gray-100">6. การระงับและการยกเลิกการใช้งาน</p>
+     <p>ผู้ให้บริการขอสงวนสิทธิ์ระงับหรือยกเลิกบัญชีทันทีโดยไม่ต้องแจ้งล่วงหน้า หากพบการละเมิดข้อตกลงหรือการกระทำที่อาจก่อให้เกิดความเสียหายต่อระบบและผู้ใช้อื่น</p>
+     <p class="font-semibold text-gray-900 dark:text-gray-100">7. การแก้ไขปรับปรุงข้อตกลง</p>
+     <p>ผู้ให้บริการอาจแก้ไขหรือเปลี่ยนแปลงเงื่อนไขได้ โดยจะแจ้งผ่านแอปพลิเคชัน การใช้งานต่อหลังการเปลี่ยนแปลงถือว่ายอมรับข้อตกลงที่แก้ไข</p>
+     <p class="font-semibold text-gray-900 dark:text-gray-100">8. กฎหมายที่ใช้บังคับ</p>
+     <p>ข้อตกลงนี้อยู่ภายใต้กฎหมายของประเทศไทย</p>
+     <p class="font-semibold text-gray-900 dark:text-gray-100">9. สถานะโครงการ</p>
+     <p>Asst.tigtoger เป็นการทดลองการใช้และศึกษาในรายวิชาความคิดสร้างสรรค์และการคิดเชิงออกแบบธุรกิจ Digital Technology and Artificial Intelligence for Business Management รหัสวิชา 1710103-69 อาจารย์ผู้สอน อาจารย์ชวพจน์ ศุภสาร คณะบริหารศาสตร์ มหาวิทยาลัยอุบลราชธานี บทเรียนที่ 5 กระบวนการคิดเชิงออกแบบ Design Thinking Process</p>
+     <p class="font-semibold text-gray-900 dark:text-gray-100">ช่องทางการติดต่อ</p>
+     <p>อีเมล: chanthirasarai@gmail.com<br>
+       เบอร์โทรศัพท์: 0806350363<br>
+       ที่อยู่: Ubon Ratchathani Business School (Digital Marketing)</p>
+    </div>
+    <div class="sticky bottom-0 bg-white dark:bg-slate-900 border-t border-gray-200 dark:border-slate-700 px-4 py-3 space-y-3">
+     <label class="flex items-start gap-3 cursor-pointer"> <input type="checkbox" id="terms-check" class="mt-1 w-5 h-5 rounded accent-teal-500" onchange="document.getElementById('terms-accept-btn').disabled=!this.checked"> <span class="text-sm" data-template-id="terms-checkbox-label" style="color: rgb(55, 65, 81); font-weight: 400; font-style: normal; font-size: 16px;">ฉันได้อ่านและยอมรับข้อตกลงและเงื่อนไข</span> </label> <button id="terms-accept-btn" disabled="" onclick="acceptTerms()" data-template-id="terms-accept-btn" class="canva-button w-full py-3 rounded-xl font-semibold disabled:opacity-40 disabled:cursor-not-allowed transition-opacity" style="background: linear-gradient(135deg, rgb(59, 77, 138), rgb(20, 184, 166)); color: rgb(255, 255, 255); font-weight: 600; font-style: normal; font-size: 16px;">ยอมรับและเริ่มใช้งาน</button>
+    </div>
+   </div>
+  </div><!-- ===== TOP BAR (for main app) ===== -->
+  <header id="app-topbar" class="hidden sticky top-0 z-30 bg-white/90 dark:bg-slate-900/90 backdrop-blur-md border-b border-gray-200 dark:border-slate-700">
+   <div class="flex items-center justify-between px-4 py-2.5">
+    <div class="flex items-center gap-2">
+     <div class="w-8 h-8 rounded-lg bg-gradient-to-br from-navy to-indigo flex items-center justify-center"><span class="text-white text-xs font-bold">A.t</span>
+     </div><span data-template-id="topbar-title" class="canva-text font-bold text-base" style="color: rgb(30, 42, 74); font-weight: 700; font-style: normal; font-size: 16px;">Asst.tigtoger</span>
+    </div>
+    <div class="flex items-center gap-2">
+     <span id="pkg-badge" class="text-xs px-2.5 py-1 rounded-full bg-amber-100 text-amber-700 dark:bg-amber-900/40 dark:text-amber-300 font-medium">ทดลองใช้ฟรี</span>
+    </div>
+   </div>
+  </header><!-- ===== HOME ===== -->
+  <div id="pg-home" class="page">
+   <main class="px-4 pt-4 pb-28 space-y-4 max-w-lg mx-auto">
+    <!-- Welcome -->
+    <div data-template-id="home-welcome" class="canva-card rounded-2xl p-5 shadow-sm" style="background: rgb(255, 255, 255);">
+     <p data-template-id="home-welcome-text" class="canva-text text-lg font-semibold" style="color: rgb(30, 42, 74); font-weight: 600; font-style: normal; font-size: 16px;">ผู้ช่วยครีเอเตอร์ของคุณ</p>
+     <p class="text-sm text-gray-500 dark:text-gray-400 mt-1">ช่วยตรวจความเสี่ยงด้านนโยบายและแนะนำการปรับเนื้อหา</p>
+    </div><!-- Main CTA --> <button onclick="showPage('pg-create');setNav(1)" data-template-id="home-cta" class="canva-button w-full py-4 rounded-2xl font-semibold text-lg shadow-md flex items-center justify-center gap-2 active:scale-[.97] transition-transform" style="background: linear-gradient(135deg, rgb(59, 77, 138), rgb(20, 184, 166)); color: rgb(255, 255, 255); font-weight: 600;"> <i data-lucide="lightbulb" class="w-5 h-5"></i> <span data-template-id="home-cta-text" class="canva-text" style="color: rgb(255, 255, 255); font-weight: 600; font-style: normal; font-size: 16px;">สร้างไอเดียคอนเทนต์</span> </button> <!-- Stats -->
+    <div class="grid grid-cols-3 gap-3">
+     <div data-template-id="stat-checked" class="canva-card rounded-xl p-3 text-center shadow-sm" style="background: rgb(255, 255, 255);">
+      <p class="text-2xl font-bold text-teal-500" id="stat-checked-num">3</p>
+      <p class="text-xs text-gray-500 dark:text-gray-400 mt-1">คลิปตรวจแล้ว</p>
+     </div>
+     <div data-template-id="stat-score" class="canva-card rounded-xl p-3 text-center shadow-sm" style="background: rgb(255, 255, 255);">
+      <p class="text-2xl font-bold text-green-500">82%</p>
+      <p class="text-xs text-gray-500 dark:text-gray-400 mt-1">พร้อมเผยแพร่</p>
+     </div>
+     <div data-template-id="stat-ideas" class="canva-card rounded-xl p-3 text-center shadow-sm" style="background: rgb(255, 255, 255);">
+      <p class="text-2xl font-bold text-indigo-500" id="stat-ideas-num">5</p>
+      <p class="text-xs text-gray-500 dark:text-gray-400 mt-1">ไอเดียบันทึก</p>
+     </div>
+    </div><!-- Trends -->
+    <div data-template-id="home-trends" class="canva-card rounded-2xl p-4 shadow-sm" style="background: rgb(255, 255, 255);">
+     <div class="flex items-center justify-between mb-3">
+      <h3 class="font-semibold flex items-center gap-2"><i data-lucide="trending-up" class="w-4 h-4 text-teal-500"></i> เทรนด์และแนวทางล่าสุด</h3><span class="demo-badge">ข้อมูลตัวอย่าง</span>
+     </div>
+     <div id="home-trends-data" class="space-y-2 text-sm" aria-live="polite">
+      <p class="text-sm text-gray-500 dark:text-gray-400">กำลังตรวจสอบข้อมูลเทรนด์...</p>
+     </div>
+     <p id="home-trends-status" class="text-xs text-amber-600 dark:text-amber-400 mt-3 flex items-start gap-1"><i data-lucide="alert-triangle" class="w-3.5 h-3.5 mt-0.5 shrink-0"></i> กำลังตรวจสอบแหล่งข้อมูลจาก Backend</p><button type="button" onclick="initTrends()" class="text-xs text-teal-600 dark:text-teal-400 underline">ลองอีกครั้ง</button>
+    </div><!-- Safety Link --> <button onclick="showPage('pg-privacy')" class="w-full flex items-center gap-3 p-4 rounded-2xl bg-white dark:bg-slate-800 shadow-sm active:scale-[.97] transition-transform">
+     <div class="w-10 h-10 rounded-xl bg-teal-50 dark:bg-teal-900/30 flex items-center justify-center"><i data-lucide="shield" class="w-5 h-5 text-teal-600"></i>
+     </div>
+     <div class="text-left">
+      <p class="font-medium text-sm">ศูนย์ความปลอดภัยและความเป็นส่วนตัว</p>
+      <p class="text-xs text-gray-400">จัดการข้อมูลและการตั้งค่าของคุณ</p>
+     </div><i data-lucide="chevron-right" class="w-4 h-4 text-gray-400 ml-auto"></i> </button>
+   </main>
+  </div><!-- ===== CREATE ===== -->
+  <div id="pg-create" class="page">
+   <main class="px-4 pt-4 pb-28 space-y-4 max-w-lg mx-auto">
+    <h2 data-template-id="create-title" class="canva-text font-bold text-xl flex items-center gap-2" style="color: rgb(30, 42, 74); font-weight: 700;"><i data-lucide="lightbulb" class="w-5 h-5 text-amber-500"></i><span data-template-id="create-title-text" class="canva-text" style="color: rgb(30, 42, 74); font-weight: 700; font-style: normal; font-size: 24px;">สร้างคอนเทนต์ด้วย AI</span></h2>
+    <form id="create-form" onsubmit="generateContent(event)" class="space-y-3">
+     <div>
+      <label for="c-topic" class="text-sm font-medium mb-1 block">หัวข้อ / ธีม</label> <input id="c-topic" type="text" placeholder="เช่น รีวิวคาเฟ่ในอุบลฯ" class="w-full px-4 py-3 rounded-xl border border-gray-200 dark:border-slate-600 bg-white dark:bg-slate-800 text-sm focus:ring-2 focus:ring-teal-400 outline-none">
+     </div>
+     <div class="grid grid-cols-2 gap-3">
+      <div>
+       <label for="c-audience" class="text-sm font-medium mb-1 block">กลุ่มเป้าหมาย</label> <input id="c-audience" type="text" placeholder="วัยรุ่น, คนทำงาน" class="w-full px-3 py-2.5 rounded-xl border border-gray-200 dark:border-slate-600 bg-white dark:bg-slate-800 text-sm focus:ring-2 focus:ring-teal-400 outline-none">
+      </div>
+      <div>
+       <label for="c-tone" class="text-sm font-medium mb-1 block">โทนภาษา</label> <select id="c-tone" class="w-full px-3 py-2.5 rounded-xl border border-gray-200 dark:border-slate-600 bg-white dark:bg-slate-800 text-sm focus:ring-2 focus:ring-teal-400 outline-none"> <option>สนุกสนาน</option><option>ให้ความรู้</option><option>สร้างแรงบันดาลใจ</option><option>เป็นทางการ</option> </select>
+      </div>
+     </div>
+     <div class="grid grid-cols-2 gap-3">
+      <div>
+       <label for="c-format" class="text-sm font-medium mb-1 block">รูปแบบคลิป</label> <select id="c-format" class="w-full px-3 py-2.5 rounded-xl border border-gray-200 dark:border-slate-600 bg-white dark:bg-slate-800 text-sm focus:ring-2 focus:ring-teal-400 outline-none"> <option>Vlog สั้น</option><option>รีวิว</option><option>สอน/How-to</option><option>เล่าเรื่อง</option><option>ชาเลนจ์</option> </select>
+      </div>
+      <div>
+       <label for="c-keywords" class="text-sm font-medium mb-1 block">คำสำคัญ</label> <input id="c-keywords" type="text" placeholder="คั่นด้วย ," class="w-full px-3 py-2.5 rounded-xl border border-gray-200 dark:border-slate-600 bg-white dark:bg-slate-800 text-sm focus:ring-2 focus:ring-teal-400 outline-none">
+      </div>
+     </div><button type="submit" id="create-gen-btn" class="w-full py-3.5 rounded-xl bg-gradient-to-r from-indigo to-teal text-white font-semibold flex items-center justify-center gap-2 active:scale-[.97] transition-transform"> <i data-lucide="sparkles" class="w-5 h-5"></i> ให้ AI ช่วยคิด <span class="demo-badge ml-1">Demo</span> </button>
+    </form>
+    <div class="flex items-start gap-2 p-3 rounded-xl bg-amber-50 dark:bg-amber-900/20 text-xs text-amber-700 dark:text-amber-300">
+     <i data-lucide="alert-triangle" class="w-4 h-4 mt-0.5 shrink-0"></i> <span>AI อาจสร้างข้อมูลคลาดเคลื่อน ผู้ใช้ต้องตรวจสอบก่อนเผยแพร่ ไม่ควรใส่ข้อมูลส่วนบุคคลหรือข้อมูลลับ</span>
+    </div><!-- Results -->
+    <div id="create-results" class="hidden space-y-3">
+     <div class="flex items-center justify-between">
+      <h3 class="font-semibold text-sm">ผลลัพธ์จาก AI <span class="demo-badge ml-1">ตัวอย่าง</span></h3><button onclick="generateContent()" class="text-xs text-teal-600 dark:text-teal-400 font-medium flex items-center gap-1"><i data-lucide="refresh-cw" class="w-3.5 h-3.5"></i> สร้างใหม่</button>
+     </div>
+     <div id="create-cards" class="space-y-3"></div>
+    </div>
+   </main>
+  </div><!-- ===== CHECK ===== -->
+  <div id="pg-check" class="page">
+   <main class="px-4 pt-4 pb-28 space-y-4 max-w-lg mx-auto">
+    <h2 data-template-id="check-title" class="canva-text font-bold text-xl flex items-center gap-2" style="color: rgb(30, 42, 74); font-weight: 700;"><i data-lucide="shield-check" class="w-5 h-5 text-teal-500"></i><span data-template-id="check-title-text" class="canva-text" style="color: rgb(30, 42, 74); font-weight: 700; font-style: normal; font-size: 24px;">ตรวจสอบคลิป</span></h2><!-- Input -->
+    <div class="space-y-3">
+     <div class="border-2 border-dashed border-gray-300 dark:border-slate-600 rounded-2xl p-6 text-center">
+      <i data-lucide="upload-cloud" class="w-10 h-10 text-gray-400 mx-auto mb-2"></i>
+      <p class="text-sm text-gray-500">อัปโหลดคลิปหรือวางข้อความสคริปต์</p><button onclick="toast('ฟังก์ชันอัปโหลดเป็น Demo')" class="mt-3 px-4 py-2 text-sm bg-gray-100 dark:bg-slate-700 rounded-xl font-medium active:scale-95 transition-transform">เลือกไฟล์ <span class="demo-badge ml-1">Demo</span></button>
+     </div><label for="check-script" class="text-sm font-medium block">หรือวางสคริปต์ที่นี่</label> <textarea id="check-script" rows="4" placeholder="วางข้อความสคริปต์ของคุณ..." class="w-full px-4 py-3 rounded-xl border border-gray-200 dark:border-slate-600 bg-white dark:bg-slate-800 text-sm focus:ring-2 focus:ring-teal-400 outline-none resize-none"></textarea>
+    </div><!-- Risk Filter -->
+    <section class="space-y-3 p-4 rounded-2xl bg-white dark:bg-slate-800 shadow-sm" aria-labelledby="risk-filter-title">
+     <div class="flex items-center justify-between">
+      <h3 id="risk-filter-title" class="font-semibold text-sm">ตรวจคำเสี่ยงก่อนเผยแพร่</h3><span class="demo-badge">Demo</span>
+     </div><label for="risk-filter-text" class="text-sm font-medium block">วางสคริปต์ คำบรรยาย หรือข้อความที่จะพูด</label> <textarea id="risk-filter-text" rows="4" placeholder="วางข้อความเพื่อกรองคำและเนื้อหาที่อาจขัดต่อนโยบาย..." class="w-full px-3 py-2.5 rounded-xl border border-gray-200 dark:border-slate-600 bg-white dark:bg-slate-800 text-sm focus:ring-2 focus:ring-teal-400 outline-none resize-none"></textarea>
+     <div class="flex gap-2">
+      <button type="button" onclick="runRiskFilter()" id="risk-filter-btn" class="flex-1 py-2.5 rounded-xl bg-teal-500 text-white font-semibold text-sm">ตรวจคำเสี่ยง <span class="demo-badge ml-1">Demo</span></button><button type="button" onclick="recheckRiskFilter()" class="px-3 py-2.5 rounded-xl border border-teal-400 text-teal-600 text-sm font-semibold">ตรวจอีกครั้ง</button>
+     </div>
+     <div id="risk-filter-results" class="hidden space-y-2" aria-live="polite"></div>
+     <p class="text-[11px] text-amber-700 dark:text-amber-300">รายการตัวอย่าง / ไม่ใช่รายการทางการ · ตัวกรองนี้เป็นเครื่องมือช่วยตรวจสอบเบื้องต้น ไม่สามารถรับประกันว่าจะป้องกันการลบคลิป การจำกัดการมองเห็น หรือการแบนได้ 100% กฎและนโยบายของ TikTok อาจเปลี่ยนแปลง โปรดตรวจสอบ Community Guidelines ของ TikTok ก่อนเผยแพร่ทุกครั้ง</p><button type="button" onclick="toast('โปรดเปิด Community Guidelines ของ TikTok จากแหล่งทางการด้วยตนเอง (Demo)')" class="text-xs text-teal-600 dark:text-teal-400 underline">ตรวจสอบนโยบายล่าสุดของ TikTok</button>
+    </section><!-- Switches -->
+    <div class="space-y-2">
+     <div class="flex items-center justify-between p-3 rounded-xl bg-white dark:bg-slate-800 shadow-sm">
+      <span class="text-sm flex items-center gap-2"><i data-lucide="volume-2" class="w-4 h-4 text-gray-400"></i> ตรวจเสียงและคำบรรยาย</span>
+      <div class="switch on" onclick="this.classList.toggle('on')" role="switch" aria-checked="true" aria-label="ตรวจเสียงและคำบรรยาย" tabindex="0"></div>
+     </div>
+     <div class="flex items-center justify-between p-3 rounded-xl bg-white dark:bg-slate-800 shadow-sm">
+      <span class="text-sm flex items-center gap-2"><i data-lucide="user-x" class="w-4 h-4 text-gray-400"></i> ตรวจข้อมูลส่วนบุคคล</span>
+      <div class="switch on" onclick="this.classList.toggle('on')" role="switch" aria-checked="true" aria-label="ตรวจข้อมูลส่วนบุคคล" tabindex="0"></div>
+     </div>
+     <div class="flex items-center justify-between p-3 rounded-xl bg-white dark:bg-slate-800 shadow-sm">
+      <span class="text-sm flex items-center gap-2"><i data-lucide="file-check" class="w-4 h-4 text-gray-400"></i> ตรวจคำกล่าวอ้าง</span>
+      <div class="switch" onclick="this.classList.toggle('on')" role="switch" aria-checked="false" aria-label="ตรวจคำกล่าวอ้าง" tabindex="0"></div>
+     </div>
+    </div><button onclick="runCheck()" id="check-run-btn" class="w-full py-3.5 rounded-xl bg-gradient-to-r from-navy to-teal text-white font-semibold flex items-center justify-center gap-2 active:scale-[.97] transition-transform"> <i data-lucide="scan" class="w-5 h-5"></i> ตรวจสอบ <span class="demo-badge ml-1">Demo</span> </button> <!-- Results -->
+    <div id="check-results" class="hidden space-y-3">
+     <h3 class="font-semibold text-sm">ผลการตรวจ <span class="demo-badge ml-1">ตัวอย่าง</span></h3>
+     <div id="check-cards" class="space-y-2"></div>
+     <div class="flex items-start gap-2 p-3 rounded-xl bg-blue-50 dark:bg-blue-900/20 text-xs text-blue-700 dark:text-blue-300">
+      <i data-lucide="info" class="w-4 h-4 mt-0.5 shrink-0"></i> <span>รายการคำและนโยบายอาจเปลี่ยนแปลง โปรดตรวจสอบ Community Guidelines ของ TikTok ก่อนเผยแพร่</span>
+     </div><button onclick="toast('ส่งออกเช็กลิสต์สำเร็จ (Demo)')" class="w-full py-3 rounded-xl border-2 border-teal-400 text-teal-600 dark:text-teal-400 font-semibold flex items-center justify-center gap-2 active:scale-[.97] transition-transform"> <i data-lucide="download" class="w-4 h-4"></i> ส่งออกเช็กลิสต์ก่อนโพสต์ </button>
+    </div>
+   </main>
+  </div><!-- ===== LIVE ===== -->
+  <div id="pg-live" class="page">
+   <main class="px-4 pt-4 pb-28 space-y-4 max-w-lg mx-auto">
+    <h2 data-template-id="live-title" class="canva-text font-bold text-xl flex items-center gap-2" style="color: rgb(30, 42, 74); font-weight: 700;"><i data-lucide="radio" class="w-5 h-5 text-red-500"></i><span data-template-id="live-title-text" class="canva-text" style="color: rgb(30, 42, 74); font-weight: 700; font-style: normal; font-size: 24px;">เตรียมพร้อมก่อนไลฟ์</span></h2><!-- Connection Status -->
+    <div class="flex items-center gap-2 p-3 rounded-xl bg-amber-50 dark:bg-amber-900/20 text-sm text-amber-700 dark:text-amber-300">
+     <span class="w-2.5 h-2.5 rounded-full bg-amber-400"></span> <span>เชื่อมต่อ TikTok: <strong>Demo / ยังไม่ได้เชื่อมต่อบัญชีจริง</strong></span>
+    </div>
+    <p class="text-xs text-gray-500 dark:text-gray-400">การเปิด TikTok พร้อมกับเว็บแอปขึ้นกับความสามารถของอุปกรณ์และสิทธิ์ของระบบ ผู้ใช้สามารถเปิดแอป TikTok แยกต่างหากได้ แต่ต้นแบบนี้ไม่สั่งเปิดหรือควบคุม TikTok โดยตรง</p><!-- Checklist -->
+    <div class="space-y-2" id="live-checklist">
+     <p class="font-semibold text-sm">เช็กลิสต์ก่อนเริ่มไลฟ์</p>
+    </div><!-- Timer -->
+    <div class="bg-white dark:bg-slate-800 rounded-2xl p-5 shadow-sm text-center">
+     <p class="text-xs text-gray-400 mb-1">ตัวจับเวลาเตรียมไลฟ์ <span class="demo-badge">Demo</span></p>
+     <p id="live-timer" class="text-4xl font-bold font-mono text-navy dark:text-teal-300">00:00</p>
+     <div class="flex justify-center gap-3 mt-3">
+      <button onclick="toggleTimer()" id="timer-btn" class="px-6 py-2 rounded-xl bg-teal-500 text-white font-medium text-sm active:scale-95 transition-transform" aria-label="เริ่มจับเวลา">เริ่ม</button> <button onclick="resetTimer()" class="px-6 py-2 rounded-xl bg-gray-200 dark:bg-slate-700 font-medium text-sm active:scale-95 transition-transform" aria-label="รีเซ็ตจับเวลา">รีเซ็ต</button>
+     </div>
+    </div><!-- AI Questions -->
+    <div>
+     <label for="live-topic" class="text-sm font-medium block mb-1">หัวข้อไลฟ์</label> <input id="live-topic" type="text" placeholder="เช่น Q&amp;A เรื่องการเริ่มต้นขายออนไลน์" class="w-full px-4 py-3 rounded-xl border border-gray-200 dark:border-slate-600 bg-white dark:bg-slate-800 text-sm focus:ring-2 focus:ring-teal-400 outline-none">
+    </div>
+    <section class="space-y-3 p-4 rounded-2xl bg-white dark:bg-slate-800 shadow-sm" aria-labelledby="live-risk-title">
+     <div class="flex items-center justify-between gap-2">
+      <h3 id="live-risk-title" class="font-semibold text-sm flex items-center gap-2"><i data-lucide="scan-search" class="w-4 h-4 text-teal-500"></i>ตรวจคำระหว่างไลฟ์</h3><span class="demo-badge">DEMO</span>
+     </div>
+     <p class="text-xs text-gray-500 dark:text-gray-400">ตรวจข้อความจากสคริปต์หรือคำบรรยายที่คุณป้อนเท่านั้น ไม่ได้ดักฟังหรือควบคุม TikTok โดยตรง</p>
+     <div class="flex items-start gap-2 p-3 rounded-xl bg-amber-50 dark:bg-amber-900/20 text-xs text-amber-700 dark:text-amber-300"><i data-lucide="wifi-off" class="w-4 h-4 shrink-0"></i><span><strong>TikTok: ยังไม่ได้เชื่อมต่อบัญชีจริง</strong><br>
+        เว็บแอปนี้ไม่สามารถฟังเสียงไลฟ์จริง เปิด TikTok หรือส่งข้อความไปยัง TikTok ได้โดยตรง โปรดถอดเสียงหรือป้อนข้อความเอง</span>
+     </div><label for="live-risk-text" class="text-sm font-medium block">วางสคริปต์หรือข้อความจากไลฟ์</label> <textarea id="live-risk-text" rows="5" aria-label="วางสคริปต์หรือข้อความจากไลฟ์" placeholder="วางข้อความที่ต้องการตรวจสอบ..." class="w-full px-3 py-2.5 rounded-xl border border-gray-200 dark:border-slate-600 bg-white dark:bg-slate-800 text-sm focus:ring-2 focus:ring-teal-400 outline-none resize-none"></textarea>
+     <div class="grid grid-cols-2 gap-2 text-xs"><button type="button" id="live-risk-alert-toggle" onclick="toggleLiveOption(this)" class="flex items-center justify-between p-3 rounded-xl bg-gray-50 dark:bg-slate-700/60" role="switch" aria-checked="true"><span>เปิดการแจ้งเตือนคำเสี่ยง</span><span class="live-option-state font-semibold text-teal-600">เปิด</span></button><button type="button" id="live-risk-pii-toggle" onclick="toggleLiveOption(this)" class="flex items-center justify-between p-3 rounded-xl bg-gray-50 dark:bg-slate-700/60" role="switch" aria-checked="true"><span>ตรวจข้อมูลส่วนบุคคล</span><span class="live-option-state font-semibold text-teal-600">เปิด</span></button>
+     </div>
+     <div class="flex gap-2"><button type="button" onclick="runLiveRiskScan()" id="live-risk-scan-btn" class="flex-1 py-2.5 rounded-xl bg-teal-500 text-white font-semibold text-sm"><i data-lucide="play" class="w-4 h-4 inline"></i> เริ่มตรวจคำ</button><button type="button" onclick="stopLiveRisk()" class="px-4 py-2.5 rounded-xl border border-gray-300 dark:border-slate-600 text-sm font-medium">หยุดตรวจ</button><button type="button" onclick="clearLiveRisk()" class="px-4 py-2.5 rounded-xl border border-gray-300 dark:border-slate-600 text-sm font-medium">ล้างข้อความ</button>
+     </div>
+     <div id="live-risk-progress" class="hidden text-xs text-teal-600 flex items-center gap-2" aria-live="polite"><span class="inline-flex gap-1"><i class="w-1.5 h-1.5 rounded-full bg-teal-500 animate-bounce"></i><i class="w-1.5 h-1.5 rounded-full bg-teal-500 animate-bounce [animation-delay:.15s]"></i><i class="w-1.5 h-1.5 rounded-full bg-teal-500 animate-bounce [animation-delay:.3s]"></i></span>กำลังตรวจแบบจำลอง...
+     </div>
+     <div id="live-risk-results" class="hidden space-y-2" aria-live="polite"></div>
+     <div class="flex gap-2"><button type="button" onclick="makeLiveSaferText()" class="flex-1 py-2 rounded-xl bg-indigo text-white text-xs font-semibold">แทนที่ด้วยถ้อยคำที่ปลอดภัยกว่า</button><button type="button" onclick="runLiveRiskScan()" class="px-3 py-2 rounded-xl border border-teal-400 text-teal-600 text-xs font-semibold">ตรวจอีกครั้ง</button>
+     </div>
+     <div>
+      <h4 class="font-semibold text-sm mb-2">ประวัติการแจ้งเตือนระหว่างไลฟ์</h4>
+      <div id="live-risk-history" class="space-y-2 text-xs">
+       <p class="text-gray-400">ยังไม่มีการแจ้งเตือนจากต้นแบบ</p>
+      </div>
+     </div>
+     <div class="space-y-2">
+      <h4 class="font-semibold text-sm">Checklist ขณะไลฟ์</h4><label class="flex gap-2 items-center text-xs"><input type="checkbox" class="accent-teal-500">หยุดพูดเมื่อพบคำเสี่ยง</label><label class="flex gap-2 items-center text-xs"><input type="checkbox" class="accent-teal-500">ตรวจบริบทด้วยตนเอง</label><label class="flex gap-2 items-center text-xs"><input type="checkbox" class="accent-teal-500">ไม่เปิดเผยข้อมูลส่วนบุคคล</label><label class="flex gap-2 items-center text-xs"><input type="checkbox" class="accent-teal-500">ตรวจสิทธิ์เพลง/ภาพ</label><label class="flex gap-2 items-center text-xs"><input type="checkbox" class="accent-teal-500">เข้าใจว่าผลการตรวจเป็นเพียงคำแนะนำ</label>
+     </div>
+     <p class="text-[11px] text-amber-700 dark:text-amber-300">ตัวกรองนี้เป็นเครื่องมือช่วยตรวจสอบเบื้องต้น ไม่ใช่รายการคำต้องห้ามอย่างเป็นทางการ และไม่สามารถรับประกันว่าจะป้องกันการลบคลิป จำกัดการมองเห็น หรือการแบนได้ 100% นโยบาย TikTok อาจเปลี่ยนแปลง โปรดตรวจสอบ Community Guidelines ล่าสุดก่อนใช้งาน</p>
+    </section><button onclick="genLiveQuestions()" class="w-full py-3 rounded-xl bg-gradient-to-r from-indigo to-teal text-white font-semibold flex items-center justify-center gap-2 active:scale-[.97] transition-transform"> <i data-lucide="message-circle" class="w-5 h-5"></i> สร้างคำถามจาก AI <span class="demo-badge ml-1">Demo</span> </button>
+    <div id="live-questions" class="hidden space-y-2"></div>
+   </main>
+  </div><!-- ===== PROFILE ===== -->
+  <div id="pg-profile" class="page">
+   <main class="px-4 pt-4 pb-28 space-y-4 max-w-lg mx-auto">
+    <div class="flex items-center gap-4 p-4 rounded-2xl bg-white dark:bg-slate-800 shadow-sm">
+     <div class="w-14 h-14 rounded-full bg-gradient-to-br from-teal to-indigo flex items-center justify-center text-white text-xl font-bold">
+      U
+     </div>
+     <div>
+      <p class="font-bold">ผู้ใช้ Demo</p>
+      <p class="text-xs text-gray-400">UBSMKT. Creator</p>
+     </div><button type="button" id="tiktok-login-btn" disabled="" aria-disabled="true" class="w-full mt-3 py-3 rounded-xl bg-gray-200 dark:bg-slate-700 text-gray-500 font-semibold cursor-not-allowed">เข้าสู่ระบบด้วย TikTok</button>
+     <p id="tiktok-login-status" class="text-xs text-amber-700 dark:text-amber-300 mt-2">ยังไม่พร้อมเชื่อมต่อ: ต้องตั้งค่า TikTok Login Kit, OAuth redirect URL และ Backend</p>
+    </div><!-- Dark Mode -->
+    <div class="flex items-center justify-between p-4 rounded-2xl bg-white dark:bg-slate-800 shadow-sm">
+     <span class="text-sm flex items-center gap-2"><i data-lucide="moon" class="w-4 h-4"></i> โหมดมืด</span>
+     <div id="dark-toggle" class="switch" onclick="toggleDark()" role="switch" aria-checked="false" aria-label="สลับโหมดมืด" tabindex="0"></div>
+    </div><!-- Menu -->
+    <div class="space-y-2">
+     <button onclick="showPage('pg-privacy')" class="w-full flex items-center gap-3 p-4 rounded-2xl bg-white dark:bg-slate-800 shadow-sm active:scale-[.97] transition-transform text-left"> <i data-lucide="shield" class="w-5 h-5 text-teal-500"></i><span class="text-sm font-medium">ความเป็นส่วนตัวและความปลอดภัย</span><i data-lucide="chevron-right" class="w-4 h-4 text-gray-400 ml-auto"></i> </button> <button onclick="showPage('pg-subscription')" class="w-full flex items-center gap-3 p-4 rounded-2xl bg-white dark:bg-slate-800 shadow-sm active:scale-[.97] transition-transform text-left"> <i data-lucide="credit-card" class="w-5 h-5 text-indigo-500"></i><span class="text-sm font-medium">สมาชิกและแพ็กเกจ</span><i data-lucide="chevron-right" class="w-4 h-4 text-gray-400 ml-auto"></i> </button> <button onclick="showPage('pg-terms')" class="w-full flex items-center gap-3 p-4 rounded-2xl bg-white dark:bg-slate-800 shadow-sm active:scale-[.97] transition-transform text-left"> <i data-lucide="file-text" class="w-5 h-5 text-gray-500"></i><span class="text-sm font-medium">ข้อตกลงและเงื่อนไข</span><i data-lucide="chevron-right" class="w-4 h-4 text-gray-400 ml-auto"></i> </button>
+    </div>
+   </main>
+  </div><!-- ===== PRIVACY ===== -->
+  <div id="pg-privacy" class="page">
+   <main class="px-4 pt-4 pb-28 space-y-4 max-w-lg mx-auto">
+    <button onclick="goBack()" class="flex items-center gap-1 text-sm text-teal-600 dark:text-teal-400 mb-2"><i data-lucide="arrow-left" class="w-4 h-4"></i> กลับ</button>
+    <h2 class="font-bold text-xl flex items-center gap-2"><i data-lucide="shield" class="w-5 h-5 text-teal-500"></i> ความเป็นส่วนตัวและความปลอดภัย</h2>
+    <div data-template-id="privacy-info" class="canva-card rounded-2xl p-4 shadow-sm" style="background: rgb(255, 255, 255);">
+     <h3 data-template-id="privacy-info-title" class="canva-text font-semibold mb-2" style="color: rgb(30, 42, 74); font-weight: 600; font-style: normal; font-size: 19px;">ข้อมูลของคุณ</h3>
+     <p class="text-sm text-gray-600 dark:text-gray-300">เว็บแอปนี้เป็นต้นแบบเพื่อการศึกษา ข้อมูลจะถูกเก็บในเบราว์เซอร์ของคุณเท่านั้นและจะหายเมื่อปิดหน้า</p>
+    </div>
+    <div class="space-y-2" id="privacy-options">
+     <!-- Generated by JS -->
+    </div>
+    <div class="p-4 rounded-2xl bg-amber-50 dark:bg-amber-900/20 text-xs text-amber-700 dark:text-amber-300 space-y-2">
+     <p class="font-semibold flex items-center gap-1"><i data-lucide="alert-triangle" class="w-4 h-4"></i> ข้อจำกัดของต้นแบบ</p>
+     <p>การรักษาความปลอดภัยจริงต้องใช้ backend, secure authentication, encryption, access control, audit logs และการตรวจสอบจากผู้เชี่ยวชาญก่อนเปิดใช้งานจริง</p>
+    </div>
+   </main>
+  </div><!-- ===== SUBSCRIPTION ===== -->
+  <div id="pg-subscription" class="page">
+   <main class="px-4 pt-4 pb-28 space-y-4 max-w-lg mx-auto">
+    <button onclick="goBack()" class="flex items-center gap-1 text-sm text-teal-600 dark:text-teal-400 mb-2"><i data-lucide="arrow-left" class="w-4 h-4"></i> กลับ</button>
+    <h2 class="font-bold text-xl flex items-center gap-2"><i data-lucide="crown" class="w-5 h-5 text-amber-500"></i> เลือกแพ็กเกจ</h2>
+    <div class="p-3 rounded-xl bg-teal-50 dark:bg-teal-900/20 text-center">
+     <span class="text-sm font-medium text-teal-700 dark:text-teal-300">🎉 ทดลองใช้ฟรี 1 วัน</span>
+     <p class="text-xs text-teal-600 dark:text-teal-400 mt-0.5">หลังจากสิ้นสุดระยะเวลาทดลองใช้ 69 บาท/สัปดาห์</p>
+    </div>
+    <div id="pkg-list" class="space-y-3">
+     <!-- Generated by JS -->
+    </div>
+    <div class="text-xs text-gray-500 dark:text-gray-400 space-y-1 px-1">
+     <p>✓ ใช้ได้สูงสุด 5 อุปกรณ์ · รวมภาษีมูลค่าเพิ่ม</p>
+     <p>✓ ยกเลิกการต่ออายุได้ผ่านเมนูในแอปหรือสโตร์ อย่างน้อย 24 ชม. ก่อนรอบถัดไป</p>
+     <p>✓ การคืนเงินเป็นไปตามนโยบายของ App Store / Google Play</p>
+    </div>
+    <section class="p-4 rounded-xl bg-slate-50 dark:bg-slate-700/50 text-xs space-y-3" aria-labelledby="system-status-title">
+     <div class="flex items-center gap-2">
+      <i data-lucide="activity" class="w-4 h-4 text-teal-500"></i>
+      <h3 id="system-status-title" class="font-semibold">สถานะระบบจริง</h3>
+     </div>
+     <div id="system-status-list" class="grid grid-cols-2 gap-2" aria-live="polite"></div><button type="button" onclick="initSystemStatus()" class="text-xs text-teal-600 dark:text-teal-400 underline">ลองอีกครั้ง</button>
+     <p class="text-amber-700 dark:text-amber-300">ระบบจะใช้งานจริงได้เมื่อเชื่อมต่อ Backend, OAuth และผู้ให้บริการชำระเงินอย่างถูกต้อง ห้ามใช้รหัสผ่านหรือข้อมูลการเงินในหน้าเว็บ</p>
+    </section>
+    <div class="p-3 rounded-xl bg-amber-50 dark:bg-amber-900/20 text-xs text-amber-700 dark:text-amber-300 flex items-start gap-2">
+     <i data-lucide="info" class="w-4 h-4 mt-0.5 shrink-0"></i> <span>ยังไม่พร้อมรับชำระเงินจริง: ต้องตั้งค่า Payment Gateway และ webhook</span>
+    </div>
+   </main>
+  </div><!-- ===== EXPIRED ===== -->
+  <div id="pg-expired" class="page">
+   <main class="px-4 pt-4 pb-28 max-w-lg mx-auto flex flex-col items-center justify-center text-center" style="min-height:calc(60 * min(var(--vh,1vh),1vh))">
+    <div class="w-20 h-20 rounded-full bg-red-100 dark:bg-red-900/30 flex items-center justify-center mb-4"><i data-lucide="lock" class="w-10 h-10 text-red-500"></i>
+    </div>
+    <h2 data-template-id="expired-title" class="canva-text text-xl font-bold mb-2" style="color: rgb(30, 42, 74); font-weight: 700; font-style: normal; font-size: 24px;">แพ็กเกจหมดอายุ</h2>
+    <p class="text-sm text-gray-500 dark:text-gray-400 mb-6">กรุณาต่ออายุแพ็กเกจเพื่อปลดล็อกฟีเจอร์พรีเมียม</p><button onclick="showPage('pg-subscription')" data-template-id="expired-cta" class="canva-button px-8 py-3 rounded-xl font-semibold shadow-md active:scale-95 transition-transform" style="background: linear-gradient(135deg, rgb(59, 77, 138), rgb(20, 184, 166)); color: rgb(255, 255, 255); font-weight: 600; font-style: normal; font-size: 16px;">ต่ออายุเพื่อปลดล็อก</button> <button onclick="showPage('pg-profile')" class="mt-3 text-sm text-gray-500 underline">เข้าถึงข้อมูลบัญชี / ยกเลิก</button>
+   </main>
+  </div><!-- ===== BOTTOM NAV ===== -->
+  <nav id="bottom-nav" class="hidden fixed bottom-0 left-0 right-0 z-30 bg-white/95 dark:bg-slate-900/95 backdrop-blur-md border-t border-gray-200 dark:border-slate-700 safe-area-bottom">
+   <div class="flex justify-around items-center py-2 max-w-lg mx-auto">
+    <button class="bottom-nav-btn active flex flex-col items-center gap-0.5 px-2 py-1 text-xs" onclick="navTo(0)" aria-label="หน้าหลัก"><i data-lucide="home" class="w-5 h-5"></i><span>หน้าหลัก</span></button> <button class="bottom-nav-btn flex flex-col items-center gap-0.5 px-2 py-1 text-xs text-gray-400" onclick="navTo(1)" aria-label="สร้างคอนเทนต์"><i data-lucide="lightbulb" class="w-5 h-5"></i><span>สร้าง</span></button> <button class="bottom-nav-btn flex flex-col items-center gap-0.5 px-2 py-1 text-xs text-gray-400" onclick="navTo(2)" aria-label="ตรวจสอบคลิป"><i data-lucide="shield-check" class="w-5 h-5"></i><span>ตรวจสอบ</span></button> <button class="bottom-nav-btn flex flex-col items-center gap-0.5 px-2 py-1 text-xs text-gray-400" onclick="navTo(3)" aria-label="ไลฟ์"><i data-lucide="radio" class="w-5 h-5"></i><span>ไลฟ์</span></button> <button class="bottom-nav-btn flex flex-col items-center gap-0.5 px-2 py-1 text-xs text-gray-400" onclick="navTo(4)" aria-label="โปรไฟล์"><i data-lucide="user" class="w-5 h-5"></i><span>โปรไฟล์</span></button>
+   </div>
+  </nav><!-- Footer -->
+  <footer id="app-footer" class="hidden text-center text-[10px] text-gray-400 dark:text-gray-500 pb-20 px-4">
+   ต้นแบบเพื่อการศึกษา ไม่ใช่การรับประกันการอนุมัติหรือการป้องกันการแบนบนแพลตฟอร์มใด ๆ<br>
+    © UBSMKT.
+  </footer>
+  <script src="/_sdk/2d77f6da28d2db67.editing_sdk.js" integrity="sha512-J2amlRCt1kRxG+KsIIrigl/2D8tdwu2dYL445oeyjdtw4o+kHc2ulDQY9K62zncyUGQOQtw3RmPXZJwLF2WCRQ=="></script>
+  <script>
+// State
+const NAV_PAGES=['pg-home','pg-create','pg-check','pg-live','pg-profile'];
+const SUB_PAGES=['pg-privacy','pg-subscription','pg-expired','pg-terms'];
+let currentPage='pg-onboarding';
+let prevPage=null;
+let timerInterval=null,timerSeconds=0;
+let darkMode=false;
+
+// Navigation
+function showPage(id){
+  prevPage=currentPage;
+  document.querySelectorAll('.page').forEach(p=>p.classList.remove('active'));
+  const pg=document.getElementById(id);
+  if(pg)pg.classList.add('active');
+  currentPage=id;
+  const isApp=NAV_PAGES.includes(id)||SUB_PAGES.includes(id);
+  document.getElementById('app-topbar').classList.toggle('hidden',!isApp);
+  document.getElementById('bottom-nav').classList.toggle('hidden',!isApp);
+  document.getElementById('app-footer').classList.toggle('hidden',!isApp);
+  if(id==='pg-terms'){
+    document.getElementById('app-topbar').classList.add('hidden');
+    document.getElementById('bottom-nav').classList.add('hidden');
+    document.getElementById('app-footer').classList.add('hidden');
+  }
+  window.scrollTo(0,0);
+}
+function navTo(i){setNav(i);showPage(NAV_PAGES[i]);}
+function setNav(i){
+  document.querySelectorAll('.bottom-nav-btn').forEach((b,j)=>{
+    b.classList.toggle('active',j===i);
+    if(j!==i)b.classList.add('text-gray-400');else b.classList.remove('text-gray-400');
+  });
+}
+function goBack(){showPage(prevPage&&NAV_PAGES.includes(prevPage)?prevPage:'pg-profile');}
+function acceptTerms(){showPage('pg-home');setNav(0);}
+
+// Toast
+function toast(msg){
+  const t=document.createElement('div');
+  t.className='toast bg-gray-900 dark:bg-gray-100 text-white dark:text-gray-900 px-4 py-2.5 rounded-xl text-sm font-medium shadow-lg pointer-events-auto';
+  t.textContent=msg;
+  document.getElementById('toast-container').appendChild(t);
+  setTimeout(()=>t.remove(),3000);
+}
+
+// Modal
+function showModal(html){
+  document.getElementById('modal-content').innerHTML=html;
+  document.getElementById('modal-overlay').classList.remove('hidden');
+}
+function hideModal(){document.getElementById('modal-overlay').classList.add('hidden');}
+document.getElementById('modal-overlay').addEventListener('click',e=>{if(e.target===e.currentTarget)hideModal();});
+
+// Dark Mode
+function toggleDark(){
+  darkMode=!darkMode;
+  document.documentElement.classList.toggle('dark',darkMode);
+  document.getElementById('dark-toggle').classList.toggle('on',darkMode);
+}
+
+// Timer
+function toggleTimer(){
+  const btn=document.getElementById('timer-btn');
+  if(timerInterval){clearInterval(timerInterval);timerInterval=null;btn.textContent='เริ่ม';return;}
+  btn.textContent='หยุด';
+  timerInterval=setInterval(()=>{
+    timerSeconds++;
+    const m=String(Math.floor(timerSeconds/60)).padStart(2,'0');
+    const s=String(timerSeconds%60).padStart(2,'0');
+    document.getElementById('live-timer').textContent=m+':'+s;
+  },1000);
+}
+function resetTimer(){
+  clearInterval(timerInterval);timerInterval=null;timerSeconds=0;
+  document.getElementById('live-timer').textContent='00:00';
+  document.getElementById('timer-btn').textContent='เริ่ม';
+}
+
+// Content Generation (Demo)
+function generateContent(e){
+  if(e)e.preventDefault();
+  const btn=document.getElementById('create-gen-btn');
+  btn.disabled=true;btn.innerHTML='<span class="animate-pulse">กำลังสร้าง...</span>';
+  setTimeout(()=>{
+    btn.disabled=false;
+    btn.innerHTML='<i data-lucide="sparkles" class="w-5 h-5"></i> ให้ AI ช่วยคิด <span class="demo-badge ml-1">Demo</span>';
+    const topic=document.getElementById('c-topic').value||'รีวิวคาเฟ่';
+    const cards=[
+      {icon:'anchor',title:'Hook เปิดคลิป',text:`"คาเฟ่นี้ซ่อนอยู่ในซอยเล็ก ๆ แต่กาแฟดีจนต้องมา!" — เริ่มด้วยความเซอร์ไพรส์`},
+      {icon:'list',title:'โครงเรื่อง',text:`1. เปิดด้วย Hook\n2. แนะนำร้าน + บรรยากาศ\n3. สั่งเมนูแนะนำ\n4. รีวิวรสชาติ\n5. สรุปให้คะแนน`},
+      {icon:'file-text',title:'สคริปต์สั้น',text:`"สวัสดีค่า วันนี้พาไปลอง${topic} ที่ต้องบอกเลยว่าเจอแล้วหลงรัก ดูจนจบนะคะ มีเซอร์ไพรส์!"`},
+      {icon:'megaphone',title:'CTA',text:'"กดไลก์ ฝากติดตาม แล้วคอมเมนต์บอกว่าอยากให้รีวิวร้านไหนต่อ!"'},
+      {icon:'hash',title:'แฮชแท็กที่เกี่ยวข้อง',text:`#${topic.replace(/\s/g,'')} #รีวิว #tiktoker #fyp #แนะนำ #อุบลราชธานี`},
+      {icon:'image',title:'คำแนะนำภาพ/เสียง',text:'ใช้แสงธรรมชาติ ถ่ายมุมใกล้อาหาร เลือกเพลงบรรยากาศ chill พูดชัดและกระชับ'}
+    ];
+    const container=document.getElementById('create-cards');
+    container.innerHTML='';
+    cards.forEach(c=>{
+      const div=document.createElement('div');
+      div.className='bg-white dark:bg-slate-800 rounded-xl p-4 shadow-sm space-y-2';
+      div.innerHTML=`<div class="flex items-center justify-between"><h4 class="font-semibold text-sm flex items-center gap-2"><i data-lucide="${c.icon}" class="w-4 h-4 text-teal-500"></i> ${c.title}</h4><div class="flex gap-1"><button onclick="copyText(this)" class="p-1.5 rounded-lg hover:bg-gray-100 dark:hover:bg-slate-700" aria-label="คัดลอก"><i data-lucide="copy" class="w-4 h-4 text-gray-400"></i></button><button onclick="toast('บันทึกแล้ว (Demo)')" class="p-1.5 rounded-lg hover:bg-gray-100 dark:hover:bg-slate-700" aria-label="บันทึก"><i data-lucide="bookmark" class="w-4 h-4 text-gray-400"></i></button></div></div><p class="text-sm text-gray-600 dark:text-gray-300 whitespace-pre-line content-text">${c.text}</p>`;
+      container.appendChild(div);
+    });
+    document.getElementById('create-results').classList.remove('hidden');
+    lucide.createIcons();
+    toast('สร้างไอเดียสำเร็จ (Demo)');
+  },1500);
+}
+
+function copyText(btn){
+  const text=btn.closest('.space-y-2').querySelector('.content-text').textContent;
+  navigator.clipboard.writeText(text).then(()=>toast('คัดลอกแล้ว')).catch(()=>toast('ไม่สามารถคัดลอกได้'));
+}
+
+// Risk filter (Demo): sample terms only, never an official policy list.
+const riskSamples=[
+ {terms:['ทำร้าย','ฆ่า','ระเบิด'],group:'ความรุนแรง/การทำร้าย',level:'เสี่ยงสูง',tip:'ปรับถ้อยคำให้เป็นกลางและหลีกเลี่ยงการสนับสนุนความรุนแรง'},
+ {terms:['เกลียดชัง','ข่มขู่','คุกคาม'],group:'การคุกคามหรือเกลียดชัง',level:'ต้องแก้ไข',tip:'ลบถ้อยคำคุกคามและใช้ภาษาที่เคารพผู้อื่น'},
+ {terms:['โป๊','เซ็กซ์','18+'],group:'เรื่องเพศหรือเนื้อหาสำหรับผู้ใหญ่',level:'ต้องแก้ไข',tip:'ตัดเนื้อหาสำหรับผู้ใหญ่และใช้คำอธิบายที่ปลอดภัย'},
+ {terms:['ยาเสพติด','ปืน','อาวุธ'],group:'ยาเสพติด/อาวุธ',level:'เสี่ยงสูง',tip:'หลีกเลี่ยงการส่งเสริมหรือให้คำแนะนำเกี่ยวกับสิ่งผิดกฎหมาย'},
+ {terms:['รวยเร็ว','การันตี','ดีที่สุด'],group:'การหลอกลวงหรือการกล่าวอ้างเกินจริง',level:'ควรตรวจสอบ',tip:'เพิ่มแหล่งอ้างอิงและปรับคำกล่าวอ้างให้ตรวจสอบได้'},
+ {terms:['เลขบัตรประชาชน','รหัสผ่าน','เบอร์โทร'],group:'ข้อมูลส่วนบุคคล',level:'ต้องแก้ไข',tip:'ตัดข้อมูลส่วนบุคคลออกจากร่างข้อความ'},
+ {terms:['เพลงลิขสิทธิ์','หนังเถื่อน','คัดลอก'],group:'ลิขสิทธิ์',level:'ควรตรวจสอบ',tip:'ขออนุญาตใช้สื่อหรือเลือกสื่อที่มีสิทธิ์ใช้งาน'}
+];
+function runRiskFilter(){
+ const input=document.getElementById('risk-filter-text'), text=input.value.trim(), out=document.getElementById('risk-filter-results'), btn=document.getElementById('risk-filter-btn');
+ if(!text){toast('กรุณาวางข้อความก่อนตรวจคำเสี่ยง');return;}
+ btn.disabled=true;btn.innerHTML='<span class="animate-pulse">กำลังตรวจ...</span>';
+ setTimeout(()=>{const hits=riskSamples.filter(r=>r.terms.some(t=>text.includes(t))); out.innerHTML=hits.length?hits.map(r=>`<div class="risk-${r.level==='เสี่ยงสูง'?'high':r.level==='ต้องแก้ไข'?'high':'mid'} bg-gray-50 dark:bg-slate-700/50 rounded-xl p-3"><p class="font-semibold text-sm">${r.group} · ${r.level}</p><p class="text-xs mt-1">พบคำตัวอย่าง: ${r.terms.filter(t=>text.includes(t)).map(t=>`<mark class="bg-amber-200 dark:bg-amber-700 px-1 rounded">${t}</mark>`).join(', ')}</p><p class="text-xs text-gray-600 dark:text-gray-300 mt-1">คำแนะนำ: ${r.tip}</p></div>`).join('')+'<button type="button" onclick="makeSaferText()" class="w-full py-2.5 rounded-xl bg-indigo text-white text-sm font-semibold">แทนที่ด้วยถ้อยคำที่ปลอดภัยกว่า (Demo)</button>': '<p class="text-sm text-green-700 dark:text-green-300">ไม่พบคำตัวอย่างที่ต้องระวังในร่างนี้ (Demo) โปรดตรวจสอบด้วยตนเอง</p>';
+ out.classList.remove('hidden');btn.disabled=false;btn.innerHTML='ตรวจคำเสี่ยง <span class="demo-badge ml-1">Demo</span>';toast(hits.length?'พบข้อความที่ควรตรวจสอบ (Demo)':'ตรวจเสร็จแล้ว (Demo)');},700);
+}
+function makeSaferText(){const el=document.getElementById('risk-filter-text');el.value=el.value.replace(/ทำร้าย|ฆ่า|ระเบิด|เกลียดชัง|ข่มขู่|คุกคาม|โป๊|เซ็กซ์|18\+|ยาเสพติด|ปืน|อาวุธ|รวยเร็ว|การันตี|ดีที่สุด|เลขบัตรประชาชน|รหัสผ่าน|เบอร์โทร|เพลงลิขสิทธิ์|หนังเถื่อน|คัดลอก/gi,'[ถ้อยคำที่ปรับให้ปลอดภัย]');toast('ปรับร่างข้อความแล้ว (Demo)');}
+function recheckRiskFilter(){runRiskFilter();}
+let liveRiskOn=false,liveRiskTimer=null,liveRiskHistory=[];
+function toggleLiveOption(btn){const on=btn.getAttribute('aria-checked')==='true';btn.setAttribute('aria-checked',String(!on));btn.querySelector('.live-option-state').textContent=on?'ปิด':'เปิด';btn.querySelector('.live-option-state').classList.toggle('text-teal-600',!on);btn.querySelector('.live-option-state').classList.toggle('text-gray-400',on);}
+function stopLiveRisk(){if(liveRiskTimer)clearTimeout(liveRiskTimer);liveRiskTimer=null;document.getElementById('live-risk-progress').classList.add('hidden');document.getElementById('live-risk-scan-btn').disabled=false;toast('หยุดการตรวจแล้ว (Demo)');}
+function clearLiveRisk(){stopLiveRisk();document.getElementById('live-risk-text').value='';document.getElementById('live-risk-results').classList.add('hidden');document.getElementById('live-risk-results').innerHTML='';toast('ล้างข้อความแล้ว (Demo)');}
+function runLiveRiskScan(){const text=document.getElementById('live-risk-text').value.trim();if(!text){toast('กรุณาวางข้อความก่อนตรวจคำ');return;}stopLiveRisk();const progress=document.getElementById('live-risk-progress');const btn=document.getElementById('live-risk-scan-btn');progress.classList.remove('hidden');btn.disabled=true;liveRiskTimer=setTimeout(()=>{const groups=[['ทำร้าย','ฆ่า','ระเบิด','ความรุนแรง/การทำร้าย','เสี่ยงสูง','หยุดพูดและตรวจสอบบริบท'],['เกลียดชัง','ข่มขู่','คุกคาม','การคุกคามหรือเกลียดชัง','ต้องแก้ไข','ปรับถ้อยคำให้เป็นกลาง'],['โป๊','เซ็กซ์','18+','เรื่องเพศหรือเนื้อหาสำหรับผู้ใหญ่','ต้องแก้ไข','ตัดเนื้อหาสำหรับผู้ใหญ่'],['ยาเสพติด','ปืน','อาวุธ','ยาเสพติด/อาวุธ','เสี่ยงสูง','หยุดพูดและตรวจสอบบริบท'],['รวยเร็ว','การันตี','ดีที่สุด','การหลอกลวงหรือคำกล่าวอ้างเกินจริง','ควรตรวจสอบ','เพิ่มแหล่งอ้างอิง'],['เบอร์โทร','อีเมล','ที่อยู่','ข้อมูลส่วนบุคคล','ต้องแก้ไข','ตัดเบอร์โทร/อีเมล/ที่อยู่'],['เพลงลิขสิทธิ์','หนังเถื่อน','คัดลอก','ลิขสิทธิ์','ควรตรวจสอบ','ใช้สื่อที่ได้รับอนุญาต']];const hits=groups.filter(g=>g.slice(0,3).some(t=>text.includes(t)));const out=document.getElementById('live-risk-results');out.innerHTML=hits.length?'<p class="font-semibold text-sm text-amber-700">พบข้อความที่ควรตรวจสอบ</p>'+hits.map(g=>`<div class="risk-${g[4]==='เสี่ยงสูง'||g[4]==='ต้องแก้ไข'?'high':'mid'} bg-gray-50 dark:bg-slate-700/50 rounded-xl p-3"><p class="font-semibold text-sm"><i data-lucide="alert-triangle" class="w-4 h-4 inline text-amber-500"></i> ${g[3]} · ${g[4]}</p><p class="text-xs mt-1">พบ: ${g.slice(0,3).filter(t=>text.includes(t)).join(', ')}</p><p class="text-xs mt-1 text-gray-600 dark:text-gray-300">คำแนะนำ: ${g[5]}</p></div>`).join(''):'<p class="text-sm text-green-700">ไม่พบคำตัวอย่างที่ต้องระวัง (Demo) โปรดตรวจสอบด้วยตนเอง</p>';out.classList.remove('hidden');progress.classList.add('hidden');btn.disabled=false;if(hits.length){toast('พบข้อความที่ควรตรวจสอบ (Demo)');liveRiskHistory.unshift({time:new Date().toLocaleTimeString('th-TH',{hour:'2-digit',minute:'2-digit'}),category:hits[0][3],level:hits[0][4]});document.getElementById('live-risk-history').innerHTML=liveRiskHistory.slice(0,5).map(h=>`<div class="p-2 rounded-lg bg-gray-50 dark:bg-slate-700/50 flex justify-between gap-2"><span>${h.time} · ${h.category} · ${h.level}</span><span class="text-amber-600">รอตรวจสอบ</span></div>`).join('');}else toast('ตรวจเสร็จแล้ว (Demo)');lucide.createIcons();},900);}
+function makeLiveSaferText(){const el=document.getElementById('live-risk-text');el.value=el.value.replace(/ทำร้าย|ฆ่า|ระเบิด|เกลียดชัง|ข่มขู่|คุกคาม|โป๊|เซ็กซ์|18\+|ยาเสพติด|ปืน|อาวุธ|รวยเร็ว|การันตี|ดีที่สุด|เบอร์โทร|อีเมล|ที่อยู่|เพลงลิขสิทธิ์|หนังเถื่อน|คัดลอก/gi,'[ถ้อยคำที่ปรับให้ปลอดภัย]');toast('ปรับร่างข้อความแล้ว (Demo)');}
+
+// Check (Demo)
+function runCheck(){
+  const script=document.getElementById('check-script').value;
+  if(!script.trim()){toast('กรุณาวางสคริปต์ก่อนตรวจสอบ');return;}
+  const btn=document.getElementById('check-run-btn');
+  btn.disabled=true;btn.innerHTML='<span class="animate-pulse">กำลังตรวจสอบ...</span>';
+  setTimeout(()=>{
+    btn.disabled=false;
+    btn.innerHTML='<i data-lucide="scan" class="w-5 h-5"></i> ตรวจสอบ <span class="demo-badge ml-1">Demo</span>';
+    const results=[
+      {level:'low',icon:'check-circle',color:'text-green-500',title:'คำเสี่ยง',desc:'ไม่พบคำที่อาจขัดต่อนโยบาย'},
+      {level:'mid',icon:'alert-triangle',color:'text-amber-500',title:'ข้อกล่าวอ้าง',desc:'พบข้อกล่าวอ้างที่ควรตรวจสอบ: "ดีที่สุด" — แนะนำเปลี่ยนเป็น "ดีมากในความเห็นส่วนตัว"'},
+      {level:'low',icon:'check-circle',color:'text-green-500',title:'ความเป็นส่วนตัว',desc:'ไม่พบข้อมูลส่วนบุคคลในสคริปต์'},
+      {level:'mid',icon:'alert-triangle',color:'text-amber-500',title:'ลิขสิทธิ์/เพลง',desc:'หากใช้เพลงประกอบ โปรดตรวจสอบว่าเป็นเพลงที่ TikTok อนุญาต'},
+      {level:'low',icon:'check-circle',color:'text-green-500',title:'คำบรรยาย',desc:'คำบรรยายเหมาะสมดี'}
+    ];
+    const container=document.getElementById('check-cards');
+    container.innerHTML='';
+    results.forEach(r=>{
+      const div=document.createElement('div');
+      div.className=`risk-${r.level} bg-white dark:bg-slate-800 rounded-xl p-3 shadow-sm`;
+      div.innerHTML=`<div class="flex items-start gap-2"><i data-lucide="${r.icon}" class="w-5 h-5 ${r.color} shrink-0 mt-0.5"></i><div><p class="font-medium text-sm">${r.title}</p><p class="text-xs text-gray-500 dark:text-gray-400 mt-0.5">${r.desc}</p></div></div>`;
+      container.appendChild(div);
+    });
+    document.getElementById('check-results').classList.remove('hidden');
+    lucide.createIcons();
+    toast('ตรวจสอบเสร็จสิ้น (Demo)');
+  },2000);
+}
+
+// Live Questions (Demo)
+function genLiveQuestions(){
+  const qs=['คุณเริ่มต้นเส้นทางครีเอเตอร์ได้อย่างไร?','มีเคล็ดลับสร้างคอนเทนต์ให้ปัง?','อุปสรรคที่เจอบ่อยที่สุดคืออะไร?','แนะนำอุปกรณ์ถ่ายคลิปหน่อย?','วางแผนคอนเทนต์ล่วงหน้ายังไง?'];
+  const container=document.getElementById('live-questions');
+  container.innerHTML='<p class="font-semibold text-sm">คำถามชวนคุย <span class="demo-badge">Demo</span></p>';
+  qs.forEach((q,i)=>{
+    const div=document.createElement('div');
+    div.className='flex items-start gap-2 p-3 bg-white dark:bg-slate-800 rounded-xl shadow-sm';
+    div.innerHTML=`<span class="w-6 h-6 rounded-full bg-teal-100 dark:bg-teal-900/40 text-teal-600 text-xs flex items-center justify-center font-bold shrink-0">${i+1}</span><span class="text-sm">${q}</span>`;
+    container.appendChild(div);
+  });
+  container.classList.remove('hidden');
+  toast('สร้างคำถามสำเร็จ (Demo)');
+}
+
+// Live Checklist
+function initLiveChecklist(){
+  const items=['ตรวจคำบรรยาย','ตรวจเสียงและสคริปต์','ตรวจข้อมูลส่วนบุคคล','ตรวจคำกล่าวอ้าง','ตรวจสิทธิ์เพลง/ภาพ','ยืนยันการตรวจสอบด้วยตนเอง'];
+  const container=document.getElementById('live-checklist');
+  items.forEach((item,i)=>{
+    const div=document.createElement('label');
+    div.className='flex items-center gap-3 p-3 bg-white dark:bg-slate-800 rounded-xl shadow-sm cursor-pointer';
+    div.innerHTML=`<input type="checkbox" class="w-5 h-5 rounded accent-teal-500"><span class="text-sm">${item}</span>`;
+    container.appendChild(div);
+  });
+}
+
+// Privacy Options
+function initPrivacy(){
+  const opts=['ไม่บันทึกคลิปถาวร','ลบประวัติการตรวจ','ลบข้อมูลบัญชี','ดาวน์โหลดข้อมูลของฉัน','เข้ารหัสข้อมูลระหว่างส่ง','ล็อกอินด้วยรหัสผ่าน/ไบโอเมตริกของอุปกรณ์'];
+  const icons=['video-off','trash-2','user-x','download','lock','fingerprint'];
+  const container=document.getElementById('privacy-options');
+  opts.forEach((opt,i)=>{
+    const div=document.createElement('div');
+    div.className='flex items-center justify-between p-3 rounded-xl bg-white dark:bg-slate-800 shadow-sm';
+    div.innerHTML=`<span class="text-sm flex items-center gap-2"><i data-lucide="${icons[i]}" class="w-4 h-4 text-gray-400"></i> ${opt}</span><div class="switch${i<2?' on':''}" onclick="this.classList.toggle('on');toast('ตั้งค่าอัปเดตแล้ว (Demo)')" role="switch" aria-label="${opt}" tabindex="0"></div>`;
+    container.appendChild(div);
+  });
+}
+
+// Packages
+async function fetchBackendJson(url, options={}, timeoutMs=8000){
+  const controller=new AbortController();
+  const timer=setTimeout(()=>controller.abort(),timeoutMs);
+  try{
+    const response=await fetch(url,{...options,credentials:'same-origin',signal:controller.signal,headers:{Accept:'application/json',...(options.headers||{})}});
+    let payload=null;
+    try{payload=await response.json();}catch(_){payload=null;}
+    if(!response.ok)throw new Error('backend_error');
+    return payload;
+  }finally{clearTimeout(timer);}
+}
+function initTikTokAuth(){
+  const btn=document.getElementById('tiktok-login-btn'), status=document.getElementById('tiktok-login-status');
+  if(!btn)return;
+  fetchBackendJson('/api/auth/tiktok/status').then(s=>{
+    if(!s||!s.ready){status.textContent='ยังไม่ได้ตั้งค่า Backend';return;}
+    btn.disabled=false;btn.removeAttribute('aria-disabled');btn.className='w-full mt-3 py-3 rounded-xl bg-teal-500 text-white font-semibold active:scale-95 transition-transform';
+    status.textContent=s.connected?'เชื่อมต่อแล้ว':'พร้อมเชื่อมต่อผ่าน Backend';
+    btn.onclick=async()=>{btn.disabled=true;status.textContent='กำลังเชื่อมต่อ...';try{const data=await fetchBackendJson('/api/auth/tiktok/start');if(!data||!data.url)throw new Error('missing_url');window.open(data.url,'_blank','noopener,noreferrer');status.textContent='กรุณาดำเนินการต่อในหน้าต่าง TikTok';}catch(e){status.textContent='ตรวจสอบข้อมูลไม่ได้';}finally{btn.disabled=false;}};
+  }).catch(()=>{status.textContent='เชื่อมต่อ Backend ไม่สำเร็จ';});
+}
+function initTrends(){
+  const dataEl=document.getElementById('home-trends-data'),statusEl=document.getElementById('home-trends-status');
+  if(!dataEl||!statusEl)return;
+  fetchBackendJson('/api/trends').then(payload=>{
+    const trends=Array.isArray(payload?.trends)?payload.trends:[];
+    if(!trends.length)throw new Error('empty');
+    dataEl.innerHTML=trends.slice(0,5).map(t=>`<div class="flex items-start gap-2 p-2 rounded-lg bg-gray-50 dark:bg-slate-700/50"><i data-lucide="trending-up" class="w-4 h-4 text-teal-500 mt-0.5 shrink-0"></i><span>${String(t.title||t.text||'ข้อมูลเทรนด์')}</span></div>`).join('');
+    statusEl.innerHTML=`<i data-lucide="check-circle" class="w-3.5 h-3.5 mt-0.5 shrink-0"></i> แหล่งข้อมูล: ${String(payload.source||'Backend')} · อัปเดต: ${String(payload.updatedAt||'ไม่ระบุ')}`;
+    lucide.createIcons();
+  }).catch(()=>{dataEl.innerHTML='<p class="text-sm text-gray-500 dark:text-gray-400">ตรวจสอบข้อมูลไม่ได้</p>';statusEl.innerHTML='<i data-lucide="alert-triangle" class="w-3.5 h-3.5 mt-0.5 shrink-0"></i> ยังไม่ได้เชื่อมต่อ Backend';lucide.createIcons();});
+}
+function initSystemStatus(){
+  const checks=[['TikTok OAuth','/api/auth/tiktok/status'],['Backend/API','/api/health'],['ฐานข้อมูล','/api/health/database'],['Payment Gateway','/api/payments/status'],['Webhook','/api/payments/webhook/status'],['HTTPS','/api/health/https']];
+  const list=document.getElementById('system-status-list');
+  list.innerHTML=checks.map(([label])=>`<div class="flex items-center justify-between gap-2 rounded-lg bg-white dark:bg-slate-800 px-2 py-2"><span>${label}</span><span class="font-semibold text-gray-500">กำลังตรวจสอบ...</span></div>`).join('');
+  checks.forEach(([label,url],i)=>fetchBackendJson(url).then(s=>{const item=list.children[i];if(item)item.querySelector('span:last-child').textContent=url==='/api/health'?'เชื่อมต่อ Backend แล้ว':(s?.ready?'พร้อม':'ยังไม่ได้ตั้งค่า Backend');}).catch(()=>{const item=list.children[i];if(item)item.querySelector('span:last-child').textContent='เชื่อมต่อ Backend ไม่สำเร็จ';}));
+}
+
+function initPackages(){
+  const pkgs=[
+    {name:'รายวัน',sub:'24 ชั่วโมง',price:'19',orig:'29',note:'',badge:'',renew:true},
+    {name:'รายสัปดาห์',sub:'7 วัน',price:'69',orig:'119',note:'',badge:'',renew:true},
+    {name:'รายเดือน',sub:'30 วัน',price:'149',orig:'249',note:'ตกวันละ 4.9 บาท',badge:'',renew:true},
+    {name:'รายปี',sub:'365 วัน',price:'990',orig:'2,388',note:'ตกเดือนละ 82.50 บาท',badge:'แนะนำ',renew:true,save:'เซฟทันที 58%'},
+    {name:'ตลอดชีพ',sub:'จ่ายครั้งเดียว',price:'2,490',orig:'',note:'ไม่มีค่าบริการเพิ่มเติมตราบใดที่ผลิตภัณฑ์ยังเปิดให้บริการ',badge:'จำกัด 100 สิทธิ์แรก',renew:false}
+  ];
+  const container=document.getElementById('pkg-list');
+  pkgs.forEach(p=>{
+    const div=document.createElement('div');
+    const isYearly=p.name==='รายปี';
+    div.className=`pkg-card rounded-2xl p-4 shadow-sm ${isYearly?'bg-gradient-to-br from-indigo/10 to-teal/10 dark:from-indigo/20 dark:to-teal/20 border-2 border-teal-400':'bg-white dark:bg-slate-800'}`;
+    let badges='';
+    if(p.badge)badges+=`<span class="text-[10px] px-2 py-0.5 rounded-full ${isYearly?'bg-teal-500 text-white':'bg-amber-100 text-amber-700'} font-semibold">${p.badge}</span> `;
+    if(p.save)badges+=`<span class="text-[10px] px-2 py-0.5 rounded-full bg-red-100 text-red-600 font-semibold">${p.save}</span>`;
+    div.innerHTML=`
+      <div class="flex items-center justify-between">
+        <div>
+          <div class="flex items-center gap-2 flex-wrap">${badges}<span class="font-semibold">${p.name}</span><span class="text-xs text-gray-400">${p.sub}</span></div>
+          <div class="flex items-baseline gap-2 mt-1"><span class="text-2xl font-bold">${p.price} ฿</span>${p.orig?`<span class="text-sm text-gray-400 line-through">${p.orig} ฿</span>`:''}</div>
+          ${p.note?`<p class="text-xs text-teal-600 dark:text-teal-400 mt-0.5">${p.note}</p>`:''}
+        </div>
+        <button type="button" disabled aria-label="${p.name} ยังไม่พร้อมรับชำระเงินจริง" class="px-4 py-2 rounded-xl bg-gray-200 dark:bg-slate-700 text-gray-500 dark:text-gray-400 font-medium text-sm cursor-not-allowed">สมัครแพ็กเกจ</button>
+      </div>`;
+    container.appendChild(div);
+  });
+}
+
+function showPkgModal(name,price,period,renew){
+  const renewText=renew?'<p class="text-xs text-amber-600 dark:text-amber-400 flex items-start gap-1 mt-2"><i data-lucide="refresh-cw" class="w-3.5 h-3.5 mt-0.5 shrink-0"></i> ต่ออายุอัตโนมัติ — ยกเลิกได้อย่างน้อย 24 ชม. ก่อนรอบถัดไป</p>':'';
+  showModal(`
+    <h3 class="font-bold text-lg mb-3">ยืนยันสมัครแพ็กเกจ</h3>
+    <div class="space-y-2 text-sm">
+      <p><strong>แพ็กเกจ:</strong> ${name} (${period})</p>
+      <p><strong>ราคา:</strong> ${price} บาท</p>
+      ${renewText}
+      <p class="text-xs text-gray-500 mt-2">ช่องทางชำระเงิน: Apple App Store / Google Play Billing / ผู้ให้บริการที่ถูกต้อง</p>
+    </div>
+    <div class="flex items-start gap-2 p-3 rounded-xl bg-amber-50 dark:bg-amber-900/20 text-xs text-amber-700 dark:text-amber-300 mt-3">
+      <i data-lucide="info" class="w-4 h-4 mt-0.5 shrink-0"></i>
+      <span>ต้นแบบ Demo — ไม่ประมวลผลเงินจริง</span>
+    </div>
+    <div class="flex gap-2 mt-4">
+      <button type="button" disabled aria-label="ยังไม่พร้อมรับชำระเงินจริง" class="flex-1 py-2.5 rounded-xl bg-gray-300 text-gray-500 font-semibold cursor-not-allowed">ยังไม่พร้อมชำระ</button>
+      <button type="button" onclick="hideModal()" class="flex-1 py-2.5 rounded-xl bg-gray-200 dark:bg-slate-600 font-medium active:scale-95 transition-transform">ยกเลิก</button>
+    </div>
+  `);
+  lucide.createIcons();
+}
+
+// Init
+document.addEventListener('DOMContentLoaded',()=>{
+  initLiveChecklist();
+  initPrivacy();
+  initPackages();
+  initSystemStatus();
+  initTikTokAuth();
+  initTrends();
+  lucide.createIcons();
+});
+</script>
+ 
+</body></html>
