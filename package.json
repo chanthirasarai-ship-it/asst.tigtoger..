@@ -1,0 +1,14 @@
+{
+  "name": "asst-tigtoger",
+  "version": "1.0.0",
+  "description": "Backend API and local server for Asst.tigtoger",
+  "main": "server.js",
+  "scripts": {
+    "start": "node server.js",
+    "dev": "node --watch server.js"
+  },
+  "keywords": ["asst", "tigtoger", "express", "api"],
+  "author": "chanthirasarai-ship-it",
+  "license": "MIT",
+  "dependencies": { "express": "^4.19.2" }
+}
